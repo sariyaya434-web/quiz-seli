@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ffc0cb, #ffb6c1);
+    margin:0;
+    padding:0;
+}
+.container {
+    width: 90%;
+    max-width: 750px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    text-align: center;
+}
+h1,h2,h3 {
+    color: #d63384;
+}
+input {
+    padding: 10px;
+    width: 70%;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+button {
+    background: #d63384;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+button:hover {
+    transform: scale(1.1);
+    background: #b02a71;
+}
+#options button {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    transition: all 0.3s;
+}
+#options button:hover {
+    transform: scale(1.05);
+}
+.hidden { display: none; }
+#question {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    text-align: left;
+    transition: opacity 0.3s;
+}
+.progress-container {
+  width: 100%;
+  background: #eee;
+  border-radius: 10px;
+  height: 20px;
+  margin-bottom: 20px;
+}
+.progress-bar {
+  width: 0%;
+  height: 100%;
+  background: #d63384;
+  border-radius: 10px;
+  transition: width 0.5s ease;
+}
+.mapel-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.mapel-buttons button {
+    margin: 10px;
+    flex: 0 0 45%;
+    min-width: 120px;
+}
+#final-score {
+    font-size: 1.5em;
+    color: #d63384;
+    font-weight: bold;
+}
+#notif-answer {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.correct { color: green; }
+.wrong { color: red; }

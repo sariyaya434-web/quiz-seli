@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz Interaktif Kelas 11 by seli</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Quiz Interaktif </h1>
+
+    <!-- Input Nama -->
+    <div id="name-container">
+        <h2>Masukkan Nama Kamu</h2>
+        <input type="text" id="username" placeholder="Nama lengkap">
+        <button id="btn-mulai" onclick="submitName()">Mulai</button>
+    </div>
+
+    <!-- Pilih Mapel -->
+    <div class="mapel-selection hidden">
+        <h2>Pilih Mapel</h2>
+        <div class="mapel-buttons">
+            <button onclick="startQuiz('tkj')">Produktif TKJ</button>
+            <button onclick="startQuiz('indonesia')">Bahasa Indonesia</button>
+            <button onclick="startQuiz('math')">Matematika</button>
+            <button onclick="startQuiz('english')">Bahasa Inggris</button>
+            <button onclick="startQuiz('history')">Sejarah Indonesia</button>
+            <button onclick="startQuiz('pkn')">PKN</button>
+        </div>
+    </div>
+
+    <!-- Quiz -->
+    <div id="quiz-container" class="hidden">
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <h3 id="user-display"></h3>
+        <div id="question"></div>
+        <div id="options"></div>
+        <div id="notif-answer"></div>
+    </div>
+
+    <!-- Skor -->
+    <div id="score-container" class="hidden">
+        <h2>Skor Akhir</h2>
+        <p id="final-score"></p>
+        <p id="semangat terus ya!"></p>
+        <button onclick="resetQuiz()">Pilih Mapel Lain</button>
+    </div>
+</div>
+<script src="quiz.js"></script>
+</body>
+</html>
